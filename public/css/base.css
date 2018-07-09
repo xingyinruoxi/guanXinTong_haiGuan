@@ -1,0 +1,148 @@
+@charset "utf-8";
+/* 重置样式 */
+body {
+    font-family: PingFang SC, ROboto, Lantinghei SC, Helvetica Neue, Helvetica, Arial, Microsoft YaHei, '\\5FAE软雅黑', STHeitiSC-Light, simsun, '\\5B8B体', WenQuanYi Zen Hei, WenQuanYi Micro Hei, sans-serif;
+    font-size: .8rem;
+    line-height: 1.5rem;
+    color: #333;
+}
+img{vertical-align: top;}
+a {
+    color: #4A4A4A;
+}
+
+p {
+    margin: .4rem 0;
+}
+
+.color-gray {
+    color: #999999;
+}
+
+.bar-nav {
+    background: #fff;
+}
+
+.bar .button-link {
+    color: #000;
+}
+
+.buttons-tab {
+    height: 2.2rem;
+}
+
+.bar .icon.icon-left {
+    font-size: 17px;
+    top: -1px;
+    font-weight: bold;
+}
+.bar-tab .tab-item .icon~.tab-label{top:-4px;}
+.bar .searchbar {
+    background: #C7C7CC;
+}
+
+.bar-tab {
+    background: #F7F7F7
+}
+.button{border-color: #1870EE;color: #1870EE;}
+.buttons-row {
+    justify-content: center;
+    -webkit-justify-content: center;
+    position: relative;
+    top: 1px;
+}
+
+.buttons-row .button {
+    width: 5.2rem;
+    border-color: #007AFF;
+}
+
+.buttons-tab .button {
+    color: #4A4A4A;
+    margin-top: -3px;
+}
+
+.buttons-tab .button.active {
+    color: #1870EE;
+    border-color: #1870EE;
+}
+
+.buttons-row .button.active {
+    background: #007AFF;
+}
+.bar-tab .tab-item.active, .bar-tab .tab-item:active{color:#1870EE }
+.bar-tab .tab-item{color:#8E8E93 }
+.bar-header-secondary .buttons-tab {
+    margin: 0 -0.5rem;
+}
+.color-primary{
+    color: #1870EE;
+}
+.card-header:after,.card-footer:before{height: 0;}
+.card {
+    border-radius: .4rem;
+    font-size: .75rem;
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.05);
+    margin: .75rem;
+    line-height: 1.2rem;
+}
+.card-header {
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+.card-content-inner{
+    padding: 0 .75rem;}
+.card .color-gray{font-size: .7rem;}
+.list-block {
+    margin: 0;
+    box-shadow:1px 0px 0px rgba(0,0,0,0.25);
+    font-size: .75rem;
+}
+
+.list-block ul:after {
+    height: 0;
+}
+
+.list-block ul li:last-child .item-content:after {
+    height: 0;
+}
+.list-block .item-after{
+    color: #666666;
+}
+.media-list .item-inner:after {
+    height: 0
+}
+input::-webkit-input-placeholder{
+    color: #8E8E93;
+    font-size: .75rem;}
+.searchbar .search-input input::-webkit-input-placeholder{
+    font-size: 12px;}
+.media-list .item-content:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: auto;
+    top: auto;
+    height: 1px;
+    width: 100%;
+    background-color: #e7e7e7;
+    display: block;
+    z-index: 15;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+.page {
+    background: #F5F5F5;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets{text-align: right;
+    padding-right: 10px;}
+.swiper-pagination-bullet-active{background: #ffffff;}
+.photo-browser .bar-tab{display: none}
+/*自定义组件样式*/
+.pull-right {
+    float: right;
+}
+.text-center{
+    text-align: center;
+}
