@@ -1,5 +1,6 @@
 $(function () {
     'use strict';
+    $.toast("操作失败");
     /*======= 首页 =======*/
     $(document).on("pageInit", "#page-index", function (e, id, page) {
         function swiperInit(num) {
@@ -88,6 +89,12 @@ $(function () {
                 $this.closest('div').remove();
             });
         });
+    });
+    /*======= 发布政策法规 =======*/
+    $(document).on("pageInit", "#page-list-lows", function (e, id, page) {
+       $('#show-toast').click(function () {
+           $.toast("操作失败");
+       });
     });
     $.init();
 });

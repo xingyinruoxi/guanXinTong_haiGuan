@@ -109,6 +109,9 @@ p {
 .list-block .item-after{
     color: #666666;
 }
+.toast{background: red;width: 7rem;
+    height: 2rem; border-radius: .4rem; background: rgba(0,0,0,.7);
+    font-size: .7rem;}
 .media-list .item-inner:after {
     height: 0
 }
@@ -138,6 +141,8 @@ input::-webkit-input-placeholder{
 .swiper-container-horizontal>.swiper-pagination-bullets{text-align: right;
     padding-right: 10px;}
 .swiper-pagination-bullet-active{background: #ffffff;}
+.search-input .icon{font-size: .7rem;
+    color: #8E8E93;}
 .photo-browser .bar-tab{display: none}
 /*自定义组件样式*/
 .pull-right {
