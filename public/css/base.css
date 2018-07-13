@@ -95,7 +95,7 @@ p {
 .card .color-gray{font-size: .7rem;}
 .list-block {
     margin: 0;
-    box-shadow:1px 0px 0px rgba(0,0,0,0.25);
+    /*box-shadow:1px 0px 0px rgba(0,0,0,0.25);*/
     font-size: .75rem;
 }
 

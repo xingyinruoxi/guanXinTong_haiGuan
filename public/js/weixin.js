@@ -1,6 +1,26 @@
 $(function () {
     'use strict';
+
     $.toast("操作失败");
+
+    function initHeight() {
+        var $tabsAnimatedWrap = $('.tabs-animated-wrap');
+        var scrollHeight = $('.tab').eq(0).get(0).scrollHeight;
+        $tabsAnimatedWrap.height(scrollHeight);
+    }
+
+    function tabsHeight() {
+        var $tabsAnimatedWrap = $('.tabs-animated-wrap');
+        $('.page').on('click', '.tab-link', function () {
+            $tabsAnimatedWrap.height('100%');
+            var $index = $(this).index();
+            var scrollHeight = $('.tab').eq($index).get(0).scrollHeight;
+            $tabsAnimatedWrap.height(scrollHeight);
+        });
+    }
+
+    initHeight();
+    tabsHeight();
     /*======= 首页 =======*/
     $(document).on("pageInit", "#page-index", function (e, id, page) {
         function swiperInit(num) {
@@ -83,8 +103,8 @@ $(function () {
         $('.list-entry-info').on('click', '.link-close', function () {
             $(this).closest('li').hide();
         });
-        $content.on('click','.confirm-ok', function () {
-            var $this=$(this);
+        $content.on('click', '.confirm-ok', function () {
+            var $this = $(this);
             $.confirm('是否确认申请删除？', function () {
                 $this.closest('div').remove();
             });
@@ -92,9 +112,9 @@ $(function () {
     });
     /*======= 发布政策法规 =======*/
     $(document).on("pageInit", "#page-list-lows", function (e, id, page) {
-       $('#show-toast').click(function () {
-           $.toast("操作失败");
-       });
+        $('#show-toast').click(function () {
+            $.toast("操作失败");
+        });
     });
     $.init();
 });
